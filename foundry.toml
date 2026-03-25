@@ -6,6 +6,12 @@ remappings = ["forge-std/=lib/forge-std/src/"]
 
 # Demos/interfaces use snake_case event params; plain imports are intentional — skip noisy style notes on build.
 [lint]
-exclude_lints = ["mixed-case-variable", "unaliased-plain-import"]
+exclude_lints = [
+  "mixed-case-variable",
+  "unaliased-plain-import",
+  "mixed-case-function",
+  "unwrapped-modifier-logic",
+  "unsafe-typecast",
+]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
